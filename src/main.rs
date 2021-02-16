@@ -33,4 +33,6 @@ fn main() {
     println!("attack_roll(ac=10, bonus=0) => {}", attack_roll(10, 0));
     println!("attack_roll(ac=13, bonus=3) => {}", attack_roll(13, 3));
     println!("attack_roll(ac=15, bonus=5) => {}", attack_roll(15, 5));
+
+
 }
