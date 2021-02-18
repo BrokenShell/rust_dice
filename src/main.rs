@@ -34,5 +34,13 @@ fn main() {
     println!("attack_roll(ac=13, bonus=3) => {}", attack_roll(13, 3));
     println!("attack_roll(ac=15, bonus=5) => {}", attack_roll(15, 5));
 
-
+    use dice::cr_str;
+    println!("\nCR as String: cr_str(i8) -> String");
+    println!("cr_str(-3) => {}", cr_str(-3));
+    println!("cr_str(-2) => {}", cr_str(-2));
+    println!("cr_str(-1) => {}", cr_str(-1));
+    println!("cr_str(0) => {}", cr_str(0));
+    println!("cr_str(10) => {}", cr_str(10));
+    println!("cr_str(20) => {}", cr_str(20));
+    println!("cr_str(30) => {}", cr_str(30));
 }

@@ -29,3 +29,17 @@ pub fn ability_check(dc: i8, bonus: i8) -> bool {
 pub fn attack_roll(ac: i8, bonus: i8) -> bool {
     return d(20) + bonus >= ac;
 }
+
+pub fn cr_str(cr: i8) -> String {
+    return if cr == -3 {
+        "CR 1/16".to_string()
+    } else if cr == -2 {
+        "CR 1/8".to_string()
+    } else if cr == -1 {
+        "CR 1/4".to_string()
+    } else if cr == 0 {
+        "CR 1/2".to_string()
+    } else {
+        format!("CR {}", cr)
+    }
+}
